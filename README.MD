@@ -15,9 +15,9 @@ python3 main.py
 
 ### What languages bot translates
 
-<p align='center'>
+
 <img src="https://github.com/mython-dev/trans_bot/blob/main/screenshots/bot.png" width="400" height="600">
-</p>
+
 
 - English --> Russian
 - Russian --> English
