@@ -2,7 +2,7 @@
 #! /usr/bin/python3
 
 
-from deep_translator import *
+from deep_translator import GoogleTranslator
 from telebot import *
 
 from buttons import *
@@ -42,12 +42,12 @@ def translator(call):
         bot.send_message(call.message.chat.id, "Tarjima qilmoqchi bo'lgan matnni yuboring!")
         @bot.message_handler()
         def translate_uz_ru(message):
-            bot.reply_to(message, YandexTranslator(source=UZBEK, target=RUSSIAN).translate(message.text))     
+            bot.reply_to(message, GoogleTranslator(source=UZBEK, target=RUSSIAN).translate(message.text))     
 
     elif call.data == 'ru__uz':
         bot.send_message(call.message.chat.id, "Отправьте текст которое хотите переводит!")
         @bot.message_handler()
         def translate_ru_uz(message):
-            bot.reply_to(message, YandexTranslator(source=RUSSIAN, target=UZBEK).translate(message.text))            
+            bot.reply_to(message, GoogleTranslator(source=RUSSIAN, target=UZBEK).translate(message.text))            
               
 bot.infinity_polling()
