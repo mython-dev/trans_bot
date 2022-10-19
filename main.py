@@ -7,7 +7,7 @@ from telebot import *
 
 from buttons import *
 
-TOKEN = '5569507559:AAEJqnblXPt_omZUNh5KB5syeD7NQqByl5w'
+TOKEN = '# add your token'
 
 bot = telebot.TeleBot(TOKEN)
 
